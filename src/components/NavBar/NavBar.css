@@ -1,0 +1,19 @@
+.NavBar{
+background-color: #DFF7E2;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 36px 60px 41px 60px;
+border-top-left-radius: 70px;
+border-top-right-radius: 70px;
+margin-top: 44px;
+height: 108px;
+
+}
+.btn-nav{
+background-color: transparent;
+border: none;}
+.btn-navactive{ background-color: #00D09E;
+padding: 12px;
+border-radius: 22px;}

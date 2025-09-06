@@ -1,0 +1,14 @@
+.week{
+display: flex;
+}
+.weekImg{padding-right: 12px;}
+.weekText{
+font-size: 12px;
+font-weight: 400;
+color: #052224;}
+.weekText2{
+    font-size: 15px;
+    font-weight: 700;
+    color: #052224;
+}
+.weekText2Color1{ color: #0068FF;}

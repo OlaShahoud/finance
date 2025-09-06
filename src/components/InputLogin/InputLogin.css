@@ -1,0 +1,32 @@
+.inputLogin{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.lapelInput{
+font-size: 15px;
+font-weight: 500;
+color: #093030;
+padding-left: 16px;
+}
+.input{
+width: 100%;
+background-color: #DFF7E2;
+border: none;
+border-radius: 18px;
+padding: 13px 34px 14px 29px;
+font-size: 16px;
+font-weight: 400;
+color: #093030;
+margin-top: 8px;
+margin-bottom: 23px;
+}
+.inp-eye{position: relative;}
+.eye{
+position: absolute; 
+right: 0;
+top: 35%;
+
+padding-right: 14px;
+}

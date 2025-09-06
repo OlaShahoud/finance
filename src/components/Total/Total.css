@@ -1,0 +1,30 @@
+.total-div{
+display: flex;
+align-items: center;
+height: max-content;
+
+
+}
+.total{
+padding-right: 39px;
+padding-left:33px ;
+}
+.image-total img{
+width: 12px;
+height: 12px;}
+.text-total{
+font-size: 12px;
+font-weight: 400;
+padding:0px 4px;
+margin: 0;
+}
+
+.number-total{
+font-size: 24px;
+font-weight: 700;
+
+}
+.total-number1{color: #F1FFF3;
+}
+.total-number2{color: #0068FF;}
+

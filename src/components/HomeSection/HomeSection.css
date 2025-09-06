@@ -1,0 +1,10 @@
+.homeSection{
+    background-color: #F1FFF3;
+    width: 100%;
+   border-top-left-radius: 90px;
+   border-top-right-radius: 90px;
+    display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}

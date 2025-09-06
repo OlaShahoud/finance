@@ -1,0 +1,18 @@
+.transactionSection{
+background-color: #F1FFF3;
+width: 100%;
+border-top-left-radius: 90px;
+border-top-right-radius: 90px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+padding-top: 29px;}
+.textTrans{
+width: 100%;
+padding-left: 49px;
+font-size: 20px;
+font-weight: 600;
+color: #052224;
+padding-bottom: 23px;
+}

@@ -1,0 +1,28 @@
+.Goals{
+background-color: #00D09E;
+height: max-content;
+display: flex;
+padding: 40px;
+border-radius: 31px;
+margin-top: 33px;
+}
+.imgPosition{
+    position: relative;
+}
+.imgPosition2{position: absolute;
+right: 0;
+top: 0;}
+.GoalsPosition{
+position: absolute;
+left: 22%;
+top: 30%;}
+.goalsOne{width: min-content;}
+.textGoals{
+font-size: 12px;
+font-weight: 500;
+color: #093030;
+text-align: center;
+}
+.lineV{padding: 0px 37px 0px 26px;}
+.lineNone{display: none;}
+.lineWeek{padding-bottom: 13px;}

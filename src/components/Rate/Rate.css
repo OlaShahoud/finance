@@ -1,0 +1,28 @@
+.rate-position{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;}
+.position2{
+position: absolute;
+top: 0;
+right: 7%;}
+.position3{
+position: absolute;
+top: 10;
+right: 10%;
+font-size: 13px;
+font-weight: 500;
+color: #052224;
+
+}
+.position4{
+position: absolute;
+top: 10;
+left: 14%;
+color: #F1FFF3;
+font-size: 12px;
+font-weight: 400;
+}
+.Rate{margin-top: 12px;
+margin-bottom: 10px;}

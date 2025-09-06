@@ -1,0 +1,27 @@
+.Taps{display: flex;
+list-style: none;
+background-color: #DFF7E2;
+justify-content: space-between;
+padding: 18px 40px;
+height: 60px;
+border-radius: 22px;
+gap: 24px;
+width: 358px;
+margin-top: 26px;
+margin-bottom: 24px;
+display: flex;
+align-items: center;
+}
+.itemContent{
+font-size: 15px;
+font-weight: 400;
+color: #052224;
+
+width: max-content;
+height: max-content;
+}
+.none-content{display: none;}
+.active{
+background-color: #00D09E;
+padding: 14px;
+border-radius: 19px;}

@@ -1,0 +1,40 @@
+.content{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;}
+.tap-text1{
+font-size: 15px;
+font-weight: 500;
+color: #052224;
+width: max-content;}
+.tap-text2{
+font-size: 12px;
+font-weight: 600;
+    color: #0068FF;
+    width: max-content;
+}
+.tap-text3{
+font-size: 13px;
+font-weight: 300;
+color: #052224;
+ padding: 0px 22px;
+width: max-content;}
+.tap-text4{
+font-size: 15px;
+font-weight: 500;
+color: #052224;
+padding-left: 14px;
+text-align: center;
+width: max-content;}
+.containerText{
+    padding: 0px 16px;
+}
+.CoText{color: #0068FF;}
+
+.tapContent{display: flex;
+flex-direction: column;
+align-items: start;
+}
+.contentPadding{padding: 24px 0px;}
+.contentPad{padding-top: 19px;}
