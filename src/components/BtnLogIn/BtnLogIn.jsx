@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const BtnLogIn = ({name,classLog}) => {
+const BtnLogIn = ({ name, classLog, onClick }) => {
   return (
-   <button className={classLog}>{name}</button>
+    <button className={classLog} onClick={onClick}>
+      {name}
+    </button>
   );
-}
+};
 
 export default BtnLogIn;
