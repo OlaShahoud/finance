@@ -9,13 +9,18 @@ import icon2 from "../../assets/img/Expense.png";
 import Total from "../Total/Total";
 import line from "../../assets/img/Line 2.png";
 import TransactionSection from "../TransactionSection/TransactionSection";
+import { useNavigate } from "react-router-dom";
 const Transactions = () => {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchData = async () => {
       try {
+        if (!localStorage.getItem("jwt")) {
+          navigate("/login");
+        }
         setLoading(true);
         const userId = localStorage.getItem("user_id");
         const jwt = encodeURIComponent(localStorage.getItem("jwt"));

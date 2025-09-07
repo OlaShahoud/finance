@@ -8,14 +8,18 @@ import Rate from "../Rate/Rate";
 import Expenses from "../Expenses/Expenses";
 import HomeSection from "../HomeSection/HomeSection";
 import { useEffect, useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 const Home = () => {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
   useEffect(() => {
     const fetchData = async () => {
       try {
+        if (!localStorage.getItem("jwt")) {
+          navigate("/login");
+        }
         setLoading(true);
         const userId = localStorage.getItem("user_id");
         const jwt = encodeURIComponent(localStorage.getItem("jwt"));
