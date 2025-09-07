@@ -10,9 +10,9 @@ return (
     <>
     <BrowserRouter>
     <Routes>
+      <Route path='/' element={ <Home/>}/>
      <Route path='/Login' element={ <Login/>}/>
       <Route path='/SignUp' element={ <SignUp/>}/>
-     <Route path='/' element={ <Home/>}/>
      <Route path='/Transactions' element={ <Transactions/>}/>
     </Routes>
     </BrowserRouter>
