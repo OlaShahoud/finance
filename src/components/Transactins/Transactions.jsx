@@ -63,7 +63,7 @@ const Transactions = () => {
     {
       icon: icon2,
       text: "Total Expense",
-      number: "-$1.187.40",
+      number: data?.total_expenses,
       cNamber: "total-number2",
     },
   ];
@@ -102,9 +102,9 @@ const Transactions = () => {
           })}
         </div>
         <Rate />
-        <Expenses />
+        <Expenses expression={data?.expression} />
       </div>
-      <TransactionSection />
+      <TransactionSection expenses={data?.expenses} salary={data?.Salary} />
     </div>
   );
 };

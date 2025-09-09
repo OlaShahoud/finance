@@ -8,12 +8,13 @@ import Rate from "../Rate/Rate";
 import Expenses from "../Expenses/Expenses";
 import HomeSection from "../HomeSection/HomeSection";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { data, useNavigate } from "react-router-dom";
 const Home = () => {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -37,11 +38,11 @@ const Home = () => {
         });
         const data = await response.json();
         console.log("data", data);
-        if (!response.ok) {
+       if (!response.ok) {
           throw new Error(data.message);
         }
         setData(data);
-        console.log("Data Fetched: ", data);
+        console.log("Data Fetched:", data);
       } catch (error) {
         console.error("Error fetching data:", error);
         setError(error);
@@ -51,6 +52,7 @@ const Home = () => {
     };
     fetchData();
   }, []);
+
   const ArrayTotal = [
     {
       icon: icon1,
@@ -61,7 +63,7 @@ const Home = () => {
     {
       icon: icon2,
       text: "Total Expense",
-      number: "-$1.187.40",
+      number:data?.total_expenses,
       cNamber: "total-number2",
     },
   ];
@@ -94,10 +96,10 @@ const Home = () => {
             );
           })}
         </div>
-        <Rate />
+        <Rate expression={data?.expression}  />
         <Expenses />
       </div>
-      <HomeSection />
+   <HomeSection revenuelastweek={data?.revenue_last_week} foodlastweek={data?.food_last_week} expenses={data?.expenses} salary={data?.Salary}  possible_savings={data?.possible_savings}/>
     </div>
   );
 };

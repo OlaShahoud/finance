@@ -8,14 +8,61 @@ margin-top: 33px;
 }
 .imgPosition{
     position: relative;
+    border-radius:50% ;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:10px solid ;
+    border-color:conic-gradient(blue 0% 60%,
+    white 60% 100%);;
+    
 }
+
 .imgPosition2{position: absolute;
 right: 0;
 top: 0;}
-.GoalsPosition{
-position: absolute;
-left: 22%;
-top: 30%;}
+
+.circle-wrapper {
+  position: relative;
+ border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #565e5c;
+}
+
+.circle-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+   left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(blue 0% var(--p), white var(--p) 100%);
+  z-index: -1; /* يكون خلف المحتوى */
+}
+
+.circle-content {
+  width: 80px;  /* حجم العنصر الداخلي أقل من wrapper */
+  height: 80px;
+  border-radius: 50%;
+ background: #00D09E;
+ padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.circle-content img{
+width: 100%;
+height: 100%;}
+ 
+
 .goalsOne{width: min-content;}
 .textGoals{
 font-size: 12px;

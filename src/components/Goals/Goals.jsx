@@ -8,25 +8,24 @@ import Week from '../Week/Week'
 import food from '../../assets/img/Food.png'
 import salary from '../../assets/img/Salary.png'
 import lineH from '../../assets/img/Line 6.png'
-const Goals = () => {
+const Goals = ({revenuelastweek1,foodlastweek,possible_savings}) => {
+  console.log(possible_savings)
     const ArrayWeek=[
     {img:salary,
     text:"Revenue Last Week",
-    text1:"$4.000.00",
+    text1:revenuelastweek1,
     ctextColor:""
    },   
    {img:food,
     text:"Food Last Week",
-    text1:"-$100.00",
+    text1: foodlastweek,
     ctextColor:"weekText2Color1"
    }]
   return (
     <div className='Goals'>
      <div className='goalsOne'>
-        <div className='imgPosition'>
-            <img src={ellips1} alt="ellips" />
-            <img className='imgPosition2' src={ellips2} alt="ellips" />
-            <div className='GoalsPosition'><img src={car} alt="car"/></div>
+        <div className='circle-wrapper' style={{ background: `conic-gradient(blue 0% ${possible_savings}%, white ${possible_savings}% 100%)`}} >
+      <div className='circle-content'><img src={car} alt="car"/></div>
         </div>
      <p className='textGoals'>Savings On Goals</p>
      </div>
